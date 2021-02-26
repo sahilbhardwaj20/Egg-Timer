@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#4D4D4D"
+    tools:context=".MainActivity">
+
+    <SeekBar
+        android:id="@+id/timerSeekBar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ImageView" />
+
+    <ImageView
+        android:id="@+id/ImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/hourglass" />
+
+    <TextView
+        android:id="@+id/timerTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="190dp"
+        android:text="0:30"
+        android:textColor="#333333"
+        android:textSize="35sp"
+        app:layout_constraintBottom_toBottomOf="@+id/ImageView"
+        app:layout_constraintEnd_toEndOf="@+id/ImageView"
+        app:layout_constraintStart_toStartOf="@+id/ImageView"
+        app:layout_constraintTop_toTopOf="@+id/ImageView" />
+
+    <Button
+        android:id="@+id/timerButton"
+        android:layout_width="75dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:backgroundTint="#65C7D0"
+        android:onClick="setTimerButton"
+        android:text="GO !"
+        app:layout_constraintBottom_toBottomOf="@+id/ImageView"
+        app:layout_constraintEnd_toEndOf="@+id/ImageView"
+        app:layout_constraintStart_toStartOf="@+id/ImageView"
+        app:layout_constraintTop_toTopOf="@+id/ImageView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
